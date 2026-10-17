@@ -1,5 +1,5 @@
 # Use a specific, modern version instead of 'latest' for reproducible builds
-FROM tomcat:10.1-jdk17-temurin
+FROM tomcat:10.1-jdk21-temurin
 
 # Create a non-root user to run Tomcat
 RUN groupadd -r tomcat && useradd -r -g tomcat tomcat
