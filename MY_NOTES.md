@@ -10,4 +10,5 @@
 6) Password-based .ssh is less safe than key-based .ssh(someone could try and guess the password), and the key-based authentication for a new user is simple to setup anyway. I created a separate key for Jenkins server to access Docker, so that I shouldn't copy the main key there.
 7) There is no existing Jenkins job, of course. Either this is the result of a Jenkins update, or this is a part of a bigger tutorial and the old job part was missed out.
 8) pom.xml expectes Java 7 instead of a newer version. Also, the Dockerfile included uses Java 17. Both were changed to 21.
-9) final change to trigger the pipeline
+9) change to trigger the pipeline
+10) The pipeline with added exec code for Docker running works exactly once since the existing Docker process is never removed.
