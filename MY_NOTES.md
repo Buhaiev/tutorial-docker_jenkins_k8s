@@ -12,3 +12,4 @@
 8) pom.xml expectes Java 7 instead of a newer version. Also, the Dockerfile included uses Java 17. Both were changed to 21.
 9) change to trigger the pipeline
 10) The pipeline with added exec code for Docker running works exactly once since the existing Docker process is never removed.
+11) Despite the name, this tutorial does not involve k8s at any point.
